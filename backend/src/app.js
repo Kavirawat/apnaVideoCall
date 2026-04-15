@@ -1,10 +1,12 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import { createServer } from "node:http";
-
 import { connectToSocket } from "./controllers/socketManager.js ";
 import mongoose from "mongoose";
 import cors from "cors";
 import userRoutes from "./routes/users.routes.js";
+
 const app = express();
 
 /* =================== Create Server ========================== */
@@ -21,9 +23,7 @@ app.use("/api/v1/users", userRoutes);
 
 /* =================== Start Server ========================== */
 const start = async () => {
-  const connectiondDb = await mongoose.connect(
-    `mongodb+srv://kavirrawat896_db_user:QjFvV9Y5oceNEHL0@cluster0.jih6zwv.mongodb.net/apnaZoom?appName=Cluster0`,
-  );
+  const connectiondDb = await mongoose.connect(process.env.MONGODB_URL);
   console.log(`MONGO Connected DB Host : ${connectiondDb.connection.host}`);
   server.listen(app.get("port"), () => {
     console.log("LISTENING ON PORT 8000");
