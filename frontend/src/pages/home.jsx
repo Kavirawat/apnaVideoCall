@@ -106,7 +106,6 @@ function HomeComponent() {
                 sx={{
                   py: 1.8,
                   textTransform: "none",
-                  fontSize: "1.1rem",
                   fontWeight: "bold",
                   backgroundColor: "#bf6600",
                   color: "black",
