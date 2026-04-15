@@ -1,0 +1,210 @@
+.landingPageContainer {
+  width: 100vw;
+  background: url("../public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+}
+
+.bodyColor {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  margin: 0;
+  padding: 0;
+}
+
+.landingPageContainer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 550;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.landingMainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  padding-inline: 3rem;
+}
+
+.landingMainContainer > div:nth-child(1) {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] {
+  background: #d97500;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] a {
+  text-decoration: none;
+  color: white;
+  /* font-weight: 500; */
+  font-size: 1.7rem;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+  background: #bf6600;
+  backdrop-filter: blur(10px);
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vh;
+  justify-content: center;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel img {
+  width: 30vh;
+  height: auto;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .landingPageContainer nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1rem;
+  }
+
+  .landingPageContainer nav .navlist {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .landingPageContainer nav h2 {
+    font-size: 1.5rem;
+  }
+
+  .landingMainContainer {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-inline: 1.5rem;
+    padding-top: 2rem;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role="button"] {
+    margin-inline: auto;
+  }
+
+  .landingMainContainer > div:nth-child(2) img {
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .meetContainer {
+    flex-direction: column;
+    height: auto;
+    gap: 5vh;
+    padding-bottom: 2rem;
+  }
+
+  .rightPanel img {
+    width: 80vw;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .landingPageContainer nav .navlist {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .landingMainContainer h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .rightPanel img {
+    margin-top: 7rem;
+    text-align: center;
+  }
+
+  .leftPanel div h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .meetContainer {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .leftPanel {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .textField {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px !important;
+  }
+
+  .textField > div,
+  .textField button {
+    width: 100% !important;
+  }
+
+  .rightPanel img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+}
