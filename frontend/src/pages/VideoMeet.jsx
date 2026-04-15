@@ -657,7 +657,7 @@ export default function VideoMeetComponent() {
                     id="outlined-basic"
                     label="Type message..."
                     variant="outlined"
-                    size="medium" // Consistency ke liye
+                    size="medium" 
                   />
                   <Button
                     className={style.btn}
