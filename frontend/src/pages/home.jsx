@@ -27,8 +27,9 @@ function HomeComponent() {
               navigate("/");
             }}
             src="../public/zoom.png"
-            style={{ width: "70px", height: "auto", padding: "5px" }}
+            style={{ width: "40px", height: "auto", padding: "5px" }}
           />
+          <h3>Apna Video Call</h3>
         </div>
 
         <div style={{ display: "flex", alignItems: "center" }}>

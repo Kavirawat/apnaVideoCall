@@ -484,7 +484,7 @@ export default function VideoMeetComponent() {
     } catch (e) {
       console.log(e);
     }
-    navigate("/");
+    navigate("/home");
   };
 
   let openChat = () => {
