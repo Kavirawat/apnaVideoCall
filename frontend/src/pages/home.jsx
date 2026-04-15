@@ -26,7 +26,7 @@ function HomeComponent() {
             onClick={() => {
               navigate("/");
             }}
-            src="../assets/zoom.png"
+            src="../public/zoom.png"
             style={{ width: "40px", height: "auto", padding: "5px" }}
           />
           <h3>Apna Video Call</h3>
